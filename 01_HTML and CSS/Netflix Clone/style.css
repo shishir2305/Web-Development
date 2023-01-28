@@ -221,3 +221,55 @@ input[type="radio"] {
   align-items: flex-start;
   padding: 10px 0;
 }
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+  }
+  nav button {
+    padding: 5px 10px;
+  }
+  .header-content {
+    position: unset;
+    transform: none;
+    padding-top: 150px;
+  }
+  .header-content h1 {
+    font-size: 30px;
+  }
+  .email-signup button {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  .text-col,
+  .img-col {
+    flex-basis: 100%;
+  }
+  .features h2 {
+    font-size: 30px;
+  }
+  .features p {
+    font-size: 12px;
+  }
+  row:nth-child(2),
+  :nth-child(4) {
+    flex-direction: column-reverse;
+  }
+  .features .row {
+    padding: 10px 0;
+  }
+  .faq h2 {
+    font-size: 20px;
+  }
+  .accordion .content {
+    font-size: 14px;
+  }
+  .accordion label {
+    padding: 10px;
+    font-size: 14px;
+  }
+  label::after {
+    font-size: 20px;
+  }
+}
